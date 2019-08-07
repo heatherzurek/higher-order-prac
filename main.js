@@ -12,155 +12,193 @@ const companies= [
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-// for(let i = 0; i < companies.length; i++) {
-//   console.log(companies[i]);
-// }
-//
-// companies.forEach(function(company) {
-//   console.log(company.name);
-// });
-//
-// ages.forEach(function(age) {
-//   console.log(age)
-// })
-//
-// let canDrink = [];
-// for(let i = 0; i < ages.length; i++){
-//   if(ages[i] >= 21) {
-//     canDrink.push(ages[i]);
-//   }
-// }
-// console.log(canDrink);
-//
-// let cantDrink = [];
-// for(let i = 0; i < ages.length; i++){
-//   if(ages[i] < 21) {
-//     cantDrink.push(ages[i]);
-//   }
-// }
-// console.log(cantDrink);
-//
-// const canDrink = ages.filter(function(age) {
-//   if(age >= 21) {
-//     return true;
-//   }
-// });
-// console.log(canDrink);
-//
-// const cantDrink = ages.filter(function(age) {
-//   if(age < 21 ) {
-//     return true;
-//   }
-// });
-// console.log(cantDrink);
+for(let i = 0; i < companies.length; i++) {
+  console.log(companies[i]);
+}
 
-// const canDrink = ages.filter(age => age >= 21);
-// console.log(canDrink);
-//
-// const cantDrink = ages.filter(age => age < 21);
-// console.log(cantDrink);
-//
-// const is33 = ages.filter(age => age === 33);
-// console.log(is33);
-//
-// const is12 = ages.filter(age => age === 12);
-// console.log(is12);
+companies.forEach(function(company) {
+  console.log(company.name);
+});
 
-// filter retail companies
+ages.forEach(function(age) {
+  console.log(age)
+})
 
-// const retailCo = companies.filter(function(company) {
-//   if(company.category === 'Retail') {
-//     return true;
-//   }
-// });
-//
-// console.log(retailCo);
+let canDrink = [];
+for(let i = 0; i < ages.length; i++){
+  if(ages[i] >= 21) {
+    canDrink.push(ages[i]);
+  }
+}
+console.log(canDrink);
 
-// const retailCo = companies.filter(company => company.category === 'Retail');
-// console.log(retailCo);
-//
-// const techCo = companies.filter(company => company.category === 'Technology');
-// console.log(techCo);
-//
-// const financeCo = companies.filter(company => company.category === 'Finance');
-// console.log(financeCo);
-//
-// const autoCo = companies.filter(company => company.category === 'Auto');
-// console.log(autoCo);
+let cantDrink = [];
+for(let i = 0; i < ages.length; i++){
+  if(ages[i] < 21) {
+    cantDrink.push(ages[i]);
+  }
+}
+console.log(cantDrink);
 
-// const start1981 = companies.filter(company => company.start === 1981);
-// console.log(start1981);
+const canDrink = ages.filter(function(age) {
+  if(age >= 21) {
+    return true;
+  }
+});
+console.log(canDrink);
 
-// const end2010 = companies.filter(company => company.end === 2010);
-// console.log(end2010);
-//
-// const end2005 = companies.filter(company => company.end === 2004);
-// console.log(end2005);
-//
-// const eightiesCo = companies.filter(company => (company.start >= 1980 && company.end < 2005));
-// console.log(eightiesCo);
-//
-// const lastedTenYears = companies.filter(company => (company.end - company.start >= 10));
-// console.log(lastedTenYears);
+const cantDrink = ages.filter(function(age) {
+  if(age < 21 ) {
+    return true;
+  }
+});
+console.log(cantDrink);
 
+const canDrink = ages.filter(age => age >= 21);
+console.log(canDrink);
 
-// const companyNames = companies.map(function(company) {
-//   return company.name;
-// });
-// console.log(companyNames);
+const cantDrink = ages.filter(age => age < 21);
+console.log(cantDrink);
 
-// const companyNames = companies.map(company => company.category);
-// console.log(companyNames);
-//
-// const testMap = companies.map(function(company) {
-//   return `${company.name} [${company.start} - ${company.end}]`;
-// });
-// console.log(testMap);
+const is33 = ages.filter(age => age === 33);
+console.log(is33);
 
-// const testMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
-//
-// console.log(testMap);
+const is12 = ages.filter(age => age === 12);
+console.log(is12);
 
-// const agesSqaure = ages.map(age => Math.sqrt(age));
-// console.log(agesSqaure);
-//
-// const agesTimesTwo = ages.map(age => age * 2);
-// console.log(agesTimesTwo);
-//
-// const agesTimesThree = ages.map(age => age * 3);
-// console.log(agesTimesThree);
-//
-// const agesTimesFour = ages.map(age => age * 4);
-// console.log(agesTimesFour);
-//
-// const agesMinusTwo = ages.map(age => age - 2);
-// console.log(agesMinusTwo);
+filter retail companies
 
-// const ageMap = ages
-//   .map(age => Math.sqrt(age))
-//   .map(age => age * 2);
-//
-// console.log(ageMap);
+const retailCo = companies.filter(function(company) {
+  if(company.category === 'Retail') {
+    return true;
+  }
+});
 
-//sort
-// const sortedCompanies = companies.sort(function(c1, c2) {
-//   if(c1.start > c2.start) {
-//     return 1;
-//   } else {
-//     return -1;
-//   }
-// });
-// console.log(sortedCompanies);
+console.log(retailCo);
 
-//sort companies by start year
-// const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1));
-//
-// console.log(sortedCompanies);
+const retailCo = companies.filter(company => company.category === 'Retail');
+console.log(retailCo);
+
+const techCo = companies.filter(company => company.category === 'Technology');
+console.log(techCo);
+
+const financeCo = companies.filter(company => company.category === 'Finance');
+console.log(financeCo);
+
+const autoCo = companies.filter(company => company.category === 'Auto');
+console.log(autoCo);
+
+const start1981 = companies.filter(company => company.start === 1981);
+console.log(start1981);
+
+const end2010 = companies.filter(company => company.end === 2010);
+console.log(end2010);
+
+const end2005 = companies.filter(company => company.end === 2004);
+console.log(end2005);
+
+const eightiesCo = companies.filter(company => (company.start >= 1980 && company.end < 2005));
+console.log(eightiesCo);
+
+const lastedTenYears = companies.filter(company => (company.end - company.start >= 10));
+console.log(lastedTenYears);
 
 
-// const sortedAges = ages.sort((a, b) => a - b);
-// console.log(sortedAges);
-//
-// 
-// const sortedByOldest = ages.sort((a, b) => b - a);
-// console.log(sortedByOldest);
+const companyNames = companies.map(function(company) {
+  return company.name;
+});
+console.log(companyNames);
+
+const companyNames = companies.map(company => company.category);
+console.log(companyNames);
+
+const testMap = companies.map(function(company) {
+  return `${company.name} [${company.start} - ${company.end}]`;
+});
+console.log(testMap);
+
+const testMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+
+console.log(testMap);
+
+const agesSqaure = ages.map(age => Math.sqrt(age));
+console.log(agesSqaure);
+
+const agesTimesTwo = ages.map(age => age * 2);
+console.log(agesTimesTwo);
+
+const agesTimesThree = ages.map(age => age * 3);
+console.log(agesTimesThree);
+
+const agesTimesFour = ages.map(age => age * 4);
+console.log(agesTimesFour);
+
+const agesMinusTwo = ages.map(age => age - 2);
+console.log(agesMinusTwo);
+
+const ageMap = ages
+  .map(age => Math.sqrt(age))
+  .map(age => age * 2);
+
+console.log(ageMap);
+
+sort
+const sortedCompanies = companies.sort(function(c1, c2) {
+  if(c1.start > c2.start) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
+console.log(sortedCompanies);
+
+sort companies by start year
+const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1));
+
+console.log(sortedCompanies);
+
+
+const sortedAges = ages.sort((a, b) => a - b);
+console.log(sortedAges);
+
+
+const sortedByOldest = ages.sort((a, b) => b - a);
+console.log(sortedByOldest);
+
+// reduce
+
+let ageSum = 0;
+for(let i = 0; i < ages.length; i++) {
+  ageSum += ages[i];
+}
+
+console.log(ageSum);
+
+
+const ageSum = ages.reduce(function(total, age) {
+  return total + age;
+}, 0);
+console.log(ageSum);
+
+
+const ageSum = ages.reduce((total, age) => total + age, 0);
+console.log(ageSum);
+
+const totalYears = companies.reduce(function(total, company) {
+  return total + (company.end - company.start);
+}, 0);
+console.log(totalYears);
+
+const totalYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
+console.log(totalYears);
+
+
+// combine Methods
+
+const combined = ages
+  .map(age => age * 2)
+  .filter(age => age >= 40)
+  .sort((a, b) => a - b)
+  .reduce((a, b) => a + b, 0)
+
+  console.log(combined);
