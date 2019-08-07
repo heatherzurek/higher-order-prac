@@ -121,17 +121,46 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //
 // console.log(testMap);
 
-const agesSqaure = ages.map(age => Math.sqrt(age));
-console.log(agesSqaure);
+// const agesSqaure = ages.map(age => Math.sqrt(age));
+// console.log(agesSqaure);
+//
+// const agesTimesTwo = ages.map(age => age * 2);
+// console.log(agesTimesTwo);
+//
+// const agesTimesThree = ages.map(age => age * 3);
+// console.log(agesTimesThree);
+//
+// const agesTimesFour = ages.map(age => age * 4);
+// console.log(agesTimesFour);
+//
+// const agesMinusTwo = ages.map(age => age - 2);
+// console.log(agesMinusTwo);
 
-const agesTimesTwo = ages.map(age => age * 2);
-console.log(agesTimesTwo);
+// const ageMap = ages
+//   .map(age => Math.sqrt(age))
+//   .map(age => age * 2);
+//
+// console.log(ageMap);
 
-const agesTimesThree = ages.map(age => age * 3);
-console.log(agesTimesThree);
+//sort
+// const sortedCompanies = companies.sort(function(c1, c2) {
+//   if(c1.start > c2.start) {
+//     return 1;
+//   } else {
+//     return -1;
+//   }
+// });
+// console.log(sortedCompanies);
 
-const agesTimesFour = ages.map(age => age * 4);
-console.log(agesTimesFour);
+//sort companies by start year
+// const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1));
+//
+// console.log(sortedCompanies);
 
-const agesMinusTwo = ages.map(age => age - 2);
-console.log(agesMinusTwo);
+
+// const sortedAges = ages.sort((a, b) => a - b);
+// console.log(sortedAges);
+//
+// 
+// const sortedByOldest = ages.sort((a, b) => b - a);
+// console.log(sortedByOldest);
