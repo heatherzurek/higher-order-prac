@@ -102,3 +102,36 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //
 // const lastedTenYears = companies.filter(company => (company.end - company.start >= 10));
 // console.log(lastedTenYears);
+
+
+// const companyNames = companies.map(function(company) {
+//   return company.name;
+// });
+// console.log(companyNames);
+
+// const companyNames = companies.map(company => company.category);
+// console.log(companyNames);
+//
+// const testMap = companies.map(function(company) {
+//   return `${company.name} [${company.start} - ${company.end}]`;
+// });
+// console.log(testMap);
+
+// const testMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+//
+// console.log(testMap);
+
+const agesSqaure = ages.map(age => Math.sqrt(age));
+console.log(agesSqaure);
+
+const agesTimesTwo = ages.map(age => age * 2);
+console.log(agesTimesTwo);
+
+const agesTimesThree = ages.map(age => age * 3);
+console.log(agesTimesThree);
+
+const agesTimesFour = ages.map(age => age * 4);
+console.log(agesTimesFour);
+
+const agesMinusTwo = ages.map(age => age - 2);
+console.log(agesMinusTwo);
