@@ -10,7 +10,7 @@ const companies= [
   {name: "Company Nine", category: "Retail", start: 1981, end: 1989}
 ];
 
-const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+const ages = [1, 3, 5, 6, 7, 8, 9, 11, 33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 for(let i = 0; i < companies.length; i++) {
   console.log(companies[i]);
@@ -184,6 +184,9 @@ console.log(ageSum);
 const ageSum = ages.reduce((total, age) => total + age, 0);
 console.log(ageSum);
 
+
+
+
 const totalYears = companies.reduce(function(total, company) {
   return total + (company.end - company.start);
 }, 0);
@@ -202,3 +205,10 @@ const combined = ages
   .reduce((a, b) => a + b, 0)
 
   console.log(combined);
+
+
+const oddNumbers = ages.filter(num => num % 2 != 0);
+console.log(oddNumbers);
+
+const oddSum = oddNumbers.reduce((total, num) => total + num, 0);
+console.log(oddSum);
